@@ -5,8 +5,8 @@ const express = require('express');
 const app = express();
 
 // app.use(express.static(`${__dirname}/public`));
-app.use(express.static(__dirname + "/public"));
-app.use("/assets", express.static(__dirname + "/public"));
+app.use("/public", express.static(__dirname + "/public"));
+// app.use("/assets", express.static(__dirname + "/public"));
 
 print("Hello World");
 // app.get("/", (_, res) => res.send("Hello Express"));
